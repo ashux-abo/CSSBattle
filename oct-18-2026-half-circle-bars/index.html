@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSSBattle</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="orange"></div>
+                <div class="m-container">
+                    <div class="c-grey"></div>
+                    <div class="m-grey"></div>
+                    <div class="m-orange"></div>
+                </div>
+                <div class="orange"></div>
+            </div>
+        <style>
+        body{
+            background: #2D3464;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .c-grey{
+            position: absolute;
+            background: #C0D6E7;
+            width: 150px;
+            height: 200px;
+            top: 50px;
+            z-index: -1;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px
+        }
+        .m-orange{
+            position: absolute;
+            top: 135px;
+            width: 200px;
+            height: 30px;
+            background: #D95362;
+        }
+        .m-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+        }
+        .m-container > div:first-child{
+            border-radius: 100vw 100vw;
+        }
+        .container > div:first-child{
+            border-radius: 100vw 0 0 100vw;
+        }
+        .container > div:nth-of-type(3){
+            border-radius: 0 100vw 100vw 0;
+        }
+        .m-grey{
+            width: 200px;
+            height: 80px;
+            background: #2D3464;
+        }
+        .orange{
+            width:30px;
+            height: 200px;
+            background: #D95362;
+        }
+
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->
+    </body>
+</html>
